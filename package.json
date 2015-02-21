@@ -11,5 +11,8 @@
   "dependencies": {
     "noodlejs": "^0.3.1",
     "restify": "^2.8.3"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
