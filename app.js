@@ -70,6 +70,11 @@ var listUrlMap = {
         url: 'http://pripara.jp/item/2015_3rd_02.html',
         name: '2015 3rdライブ 2月'
     },
+    third03: {
+        series: '3rd_03',
+        url: 'http://pripara.jp/item/2015_3rd_03.html',
+        name: '2015 3rdライブ 3月'
+    },
     encore: {
         series: 'encore',
         url: 'http://pripara.jp/item/encore.html',
