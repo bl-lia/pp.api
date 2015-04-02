@@ -63,27 +63,47 @@ var listUrlMap = {
     third01: {
         series: '3rd_01',
         url: 'http://pripara.jp/item/2015_3rd_01.html',
-        name: '2015 3rdライブ 1月'
+        name: '2014-2015 3rdライブ 1月'
     },
     third02: {
         series: '3rd_02',
         url: 'http://pripara.jp/item/2015_3rd_02.html',
-        name: '2015 3rdライブ 2月'
+        name: '2014-2015 3rdライブ 2月'
     },
     third03: {
         series: '3rd_03',
         url: 'http://pripara.jp/item/2015_3rd_03.html',
-        name: '2015 3rdライブ 3月'
+        name: '2014-2015 3rdライブ 3月'
+    },
+    first2015: {
+        series: 'first2015',
+        url: 'http://pripara.jp/item/2015_1st.html',
+        name: '2015 1stライブ'
+    },
+    dream201501: {
+        series: 'dream2015_01',
+        url: 'http://pripara.jp/item/dream2015_1st.html',
+        name: 'ドリームシアター　2015 1stライブ'
     },
     encore: {
         series: 'encore',
         url: 'http://pripara.jp/item/encore.html',
         name: '限定コーデアンコールライブ'
     },
+    encore2015: {
+        series: 'encore2015',
+        url: 'http://pripara.jp/item/2015_encore.html',
+        name: '2015シリーズ限定コーデアンコールライブ'
+    },
     limited: {
         series: 'limited',
         url: 'http://pripara.jp/item/limited_time.html',
         name: '期間限定ライブ'
+    },
+    limited: {
+        series: 'limited2015',
+        url: 'http://pripara.jp/item/2015limited_time.html',
+        name: '2015シリーズ　期間限定ライブ'
     },
     collection: {
         series: 'collection',
@@ -93,7 +113,12 @@ var listUrlMap = {
     promotion: {
         series: 'promotion',
         url: 'http://pripara.jp/item/promotion.html',
-        name: 'プロモーション'
+        name: '2014シリーズプロモーション'
+    },
+    promotion2015: {
+        series: 'promotion2015',
+        url: 'http://pripara.jp/item/2015promotion.html',
+        name: '2015シリーズプロモーション'
     },
     pripass: {
         series: 'pripass',
