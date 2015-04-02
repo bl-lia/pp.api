@@ -100,7 +100,7 @@ var listUrlMap = {
         url: 'http://pripara.jp/item/limited_time.html',
         name: '期間限定ライブ'
     },
-    limited: {
+    limited2015: {
         series: 'limited2015',
         url: 'http://pripara.jp/item/2015limited_time.html',
         name: '2015シリーズ　期間限定ライブ'
