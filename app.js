@@ -145,7 +145,7 @@ function loadlist (url, req, res, next) {
                 });
             };
 
-            res.set("Content-Type", "application/json; charset=utf-8");
+            res.charSet('utf-8');
             res.send(json);
             next();
         }
@@ -167,7 +167,7 @@ server.get('/series', function (req, res, next) {
         response.push(listUrlMap[series]);
     }
 
-    res.set("Content-Type", "application/json; charset=utf-8");
+    res.charSet('utf-8');
     res.send(response);
     next();
 });
