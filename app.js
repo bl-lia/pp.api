@@ -80,6 +80,11 @@ var listUrlMap = {
         url: 'http://pripara.jp/item/2015_1st.html',
         name: '2015 1stライブ'
     },
+    second2015: {
+        series: 'second2015',
+        url: 'http://pripara.jp/item/2015_2nd.html',
+        name: '2015 2ndライブ'
+    },
     dream201501: {
         series: 'dream2015_01',
         url: 'http://pripara.jp/item/dream2015_1st.html',
