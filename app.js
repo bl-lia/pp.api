@@ -1,5 +1,6 @@
 var restify = require('restify');
 var noodle  = require('noodlejs');
+var _ = require('underscore');
 
 var propmap = {
     id: {
@@ -152,6 +153,65 @@ var listUrlMap = {
     }
 };
 
+var brands = [
+    {
+        id: "twinkle",
+        value: "Twinkle Ribbon"
+    },
+    {
+        id: "candy",
+        value: "Candy Alamode"
+    },
+    {
+        id: "RONI",
+        value: "RONI"
+    },
+    {
+        id: "holic",
+        value: "Holic Trick"
+    },
+    {
+        id: "baby",
+        value: "Baby Monster"
+    },
+    {
+        id: "buki",
+        value: "BUKIGAMI"
+    },
+    {
+        id: "fortune",
+        value: "Fortune Party"
+    },
+    {
+        id: "prismstone",
+        value: "Prism Stone"
+    },
+    {
+        id: "dreaming",
+        value: "Dreaming Girl"
+    },
+    {
+        id: "marionette",
+        value: "Marionette Mu"
+    },
+    {
+        id: "silky",
+        value: "Silky Heart"
+    },
+    {
+        id: "classic",
+        value: "Holic Trick Classic"
+    },
+    {
+        id: "coco",
+        value: "CoCo Flower"
+    },
+    {
+        id: "more",
+        value: "Candy Alamode More"
+    }
+];
+
 function loadlist (url, req, res, next) {
     noodle.query({
         url: url,
@@ -168,11 +228,17 @@ function loadlist (url, req, res, next) {
                 var name = r.name[i];
                 var category = r.category[i];
                 var type = r.type[i];
-                var brand = r.brand[i];
+                var brand = _.find(brands, function (brand) {
+                    return brand.id == r.brand[i];
+                });
                 var rarity = r.rarity[i];
                 var score = r.score[i];
                 var color = r.color[i];
                 var img = r.img[i];
+
+                if (brand === undefined) {
+                    brand = null;
+                }
 
                 name = name.substr(name.indexOf(id) + id.length);
                 img = 'http://pripara.jp/item/' + img;

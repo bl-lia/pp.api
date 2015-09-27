@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy app.yaml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "noodlejs": "^0.3.1",
-    "restify": "^2.8.3"
+    "restify": "^2.8.3",
+    "underscore": "^1.8.3"
   },
   "engines": {
     "node": "0.10.x"
